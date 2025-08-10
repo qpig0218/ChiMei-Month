@@ -22,8 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm
-      # 用 npm install（你的 repo 沒有 package-lock.json，用 npm ci 會失敗）
+          cache: 'npm'
       - run: npm install
       - run: npm run build
       - uses: actions/upload-pages-artifact@v3
