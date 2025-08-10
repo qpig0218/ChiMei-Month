@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 自訂：需要再加也 OK */
+:root { color-scheme: light; }
